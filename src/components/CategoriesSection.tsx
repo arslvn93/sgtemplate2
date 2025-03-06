@@ -4,23 +4,20 @@ import { Link } from "react-router-dom";
 
 const CategoriesSection = () => {
   return (
-    <section className="py-6 border-t border-b border-beige-200 bg-white">
+    <section className="py-4 bg-[#C9C4C0]">
       <div className="container-custom">
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-          <Link to="/category-name" className="text-sm font-display uppercase hover:text-primary/70 transition-colors tracking-widest">
-            copywriting
+        <div className="grid grid-cols-4 gap-4 text-center">
+          <Link to="/services" className="uppercase text-xs tracking-wider text-gray-800 font-medium py-2">
+            SOCIAL MEDIA
           </Link>
-          <div className="category-divider"></div>
-          <Link to="/category-name" className="text-sm font-display uppercase hover:text-primary/70 transition-colors tracking-widest">
-            strategy
+          <Link to="/services" className="uppercase text-xs tracking-wider text-gray-800 font-medium py-2">
+            COPYWRITING
           </Link>
-          <div className="category-divider"></div>
-          <Link to="/category-name" className="text-sm font-display uppercase hover:text-primary/70 transition-colors tracking-widest">
-            marketing
+          <Link to="/services" className="uppercase text-xs tracking-wider text-gray-800 font-medium py-2">
+            STRATEGY
           </Link>
-          <div className="category-divider"></div>
-          <Link to="/category-name" className="text-sm font-display uppercase hover:text-primary/70 transition-colors tracking-widest">
-            social media
+          <Link to="/services" className="uppercase text-xs tracking-wider text-gray-800 font-medium py-2">
+            MARKETING
           </Link>
         </div>
       </div>
