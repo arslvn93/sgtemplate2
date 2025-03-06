@@ -21,15 +21,18 @@ const MyStorySection = () => {
             <h2 className="mt-3 text-4xl md:text-5xl font-display leading-tight">
               How I Started My Marketing Journey
             </h2>
+            <div className="h-px w-20 bg-gray-300 my-6"></div>
             <p className="mt-6 text-muted-foreground">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore duis 17% magna
             </p>
             <p className="mt-4 text-muted-foreground">
               Et tortor consequat id porta nibh. Et tortor at risus viverra adipiscing at in tellus integer. Ornare suspendisse sed nisi lacus sed viverra tellus in. Etiam dignissim diam quis enim lobortis fermentum dui faucibus. Adipiscing elit duis sollicitudin nibh sit. Hendrerit gravida rutrum.
             </p>
-            <Link to="/about" className="btn-outline text-black mt-6 inline-block border-black">
-              ABOUT MEGAN
-            </Link>
+            <div className="mt-8">
+              <Link to="/about" className="btn-outline text-black inline-flex items-center border-black">
+                ABOUT MEGAN
+              </Link>
+            </div>
           </div>
         </div>
       </div>
