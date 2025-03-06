@@ -30,47 +30,48 @@ const Navbar = () => {
       }`}
     >
       <div className="container-custom flex items-center justify-between">
-        <Link to="/" className="text-primary text-xl font-serif">
-          Words & Tips
+        <Link to="/" className="flex flex-col items-center text-primary">
+          <span className="text-lg md:text-xl font-serif">Megan Knight</span>
+          <span className="text-xs uppercase tracking-wide">BUSINESS COACH</span>
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link
             to="/"
-            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors"
+            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors uppercase"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors"
+            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors uppercase"
           >
             About
           </Link>
           <Link
             to="/services"
-            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors"
+            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors uppercase"
           >
             Services
           </Link>
           <Link
-            to="/portfolio"
-            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors"
-          >
-            Portfolio
-          </Link>
-          <Link
             to="/blog"
-            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors"
+            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors uppercase"
           >
             Blog
           </Link>
           <Link
             to="/contact"
-            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors"
+            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors uppercase"
           >
             Contact
+          </Link>
+          <Link
+            to="#freebie"
+            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors uppercase"
+          >
+            Freebies
           </Link>
         </nav>
 
@@ -122,45 +123,45 @@ const Navbar = () => {
         <div className="container-custom flex flex-col space-y-4">
           <Link
             to="/"
-            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors"
+            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors uppercase"
             onClick={() => setMobileMenuOpen(false)}
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors"
+            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors uppercase"
             onClick={() => setMobileMenuOpen(false)}
           >
-            About
+            Meet Megan
           </Link>
           <Link
             to="/services"
-            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors"
+            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors uppercase"
             onClick={() => setMobileMenuOpen(false)}
           >
             Services
           </Link>
           <Link
-            to="/portfolio"
-            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Portfolio
-          </Link>
-          <Link
             to="/blog"
-            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors"
+            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors uppercase"
             onClick={() => setMobileMenuOpen(false)}
           >
             Blog
           </Link>
           <Link
             to="/contact"
-            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors"
+            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors uppercase"
             onClick={() => setMobileMenuOpen(false)}
           >
             Contact
+          </Link>
+          <Link
+            to="#freebie"
+            className="text-sm font-medium text-primary hover:text-primary/70 transition-colors uppercase"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Freebie
           </Link>
         </div>
       </div>
