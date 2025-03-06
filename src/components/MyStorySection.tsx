@@ -1,18 +1,11 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
-
 const MyStorySection = () => {
-  return (
-    <section className="py-20 bg-[#EEEAE6]">
+  return <section className="py-20 bg-[#EEEAE6]">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <img
-              src="/lovable-uploads/edf70018-4bf3-402c-b9d3-18ab91b88fc3.png"
-              alt="Portrait photo of woman sitting on chair"
-              className="w-full h-full object-cover object-center"
-            />
+            <img alt="Portrait photo of woman sitting on chair" className="w-full h-full object-cover object-center" src="/lovable-uploads/c1739916-b84a-49b3-8d9d-38ad35d8fd3c.jpg" />
           </div>
           <div className="bg-white p-12">
             <span className="uppercase text-xs tracking-wider text-muted-foreground">
@@ -36,8 +29,6 @@ const MyStorySection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default MyStorySection;
