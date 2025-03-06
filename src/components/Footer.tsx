@@ -5,9 +5,17 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  // Sample Instagram images for the grid
+  const instagramImages = Array(12).fill("").map((_, index) => ({
+    id: index + 1,
+    src: `https://source.unsplash.com/random/300x300?interior,fashion,lifestyle&sig=${index}`,
+    alt: `Instagram post ${index + 1}`
+  }));
+
   return (
-    <footer className="bg-gray-900 text-white py-16">
-      <div className="container-custom">
+    <footer className="bg-gray-900 text-white">
+      {/* Main Footer Content */}
+      <div className="container-custom pt-16 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 mb-8">
           {/* Logo & Info */}
           <div className="col-span-1">
@@ -163,12 +171,28 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-
-        <div className="border-t border-gray-800 pt-8 text-center">
-          <p className="text-gray-500 text-xs">
-            © DESIGNORINA {currentYear}. ALL RIGHTS RESERVED.
-          </p>
+      </div>
+      
+      {/* Instagram Feed Grid */}
+      <div className="w-full">
+        <div className="grid grid-cols-6 md:grid-cols-12">
+          {instagramImages.map((image) => (
+            <div key={image.id} className="aspect-square overflow-hidden">
+              <img 
+                src={image.src} 
+                alt={image.alt} 
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+          ))}
         </div>
+      </div>
+
+      {/* Copyright */}
+      <div className="border-t border-gray-800 py-8 text-center">
+        <p className="text-gray-500 text-xs">
+          © DESIGNORINA {currentYear}. ALL RIGHTS RESERVED.
+        </p>
       </div>
     </footer>
   );

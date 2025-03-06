@@ -13,7 +13,6 @@ import ServicesGridSection from "@/components/ServicesGridSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FreebieSection from "@/components/FreebieSection";
 import CtaSection from "@/components/CtaSection";
-import InstagramFeed from "@/components/InstagramFeed";
 
 const Index = () => {
   useEffect(() => {
@@ -34,7 +33,6 @@ const Index = () => {
       <TestimonialsSection />
       <FreebieSection />
       <CtaSection />
-      <InstagramFeed />
       <Footer />
     </>
   );

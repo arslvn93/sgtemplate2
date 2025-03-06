@@ -131,4 +131,17 @@
   .section-divider {
     @apply w-full h-px bg-beige-200;
   }
+  
+  /* Instagram grid */
+  .instagram-grid {
+    @apply grid grid-cols-6 md:grid-cols-12 w-full;
+  }
+  
+  .instagram-grid-item {
+    @apply aspect-square overflow-hidden;
+  }
+  
+  .instagram-grid-image {
+    @apply w-full h-full object-cover transition-transform duration-500 hover:scale-110;
+  }
 }
