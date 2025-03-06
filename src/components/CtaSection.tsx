@@ -1,9 +1,6 @@
-
 import React from "react";
-
 const CtaSection = () => {
-  return (
-    <section className="bg-black text-white py-16">
+  return <section className="bg-black text-white py-16">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1">
@@ -24,17 +21,11 @@ const CtaSection = () => {
           </div>
           <div className="order-1 md:order-2 flex justify-center">
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1611926653456-e0109c2710e3?auto=format&fit=crop&q=80&w=630&ixlib=rb-4.0.3"
-                alt="Tablet mockup" 
-                className="w-full max-w-md"
-              />
+              <img alt="Tablet mockup" className="w-full max-w-md" src="/lovable-uploads/31a27541-f3a6-49bd-ab98-628b9fb6c03f.jpg" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CtaSection;
