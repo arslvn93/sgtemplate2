@@ -99,11 +99,11 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center px-5 py-3 text-xs font-medium text-white bg-white border border-transparent transition-colors duration-300 hover:bg-opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring uppercase tracking-widest;
+    @apply inline-flex items-center justify-center px-5 py-3 text-xs font-medium text-white bg-black border border-transparent transition-colors duration-300 hover:bg-black/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring uppercase tracking-widest;
   }
   
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-5 py-3 text-xs font-medium text-primary bg-beige-100 transition-colors duration-300 hover:bg-beige-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring uppercase tracking-widest;
+    @apply inline-flex items-center justify-center px-5 py-3 text-xs font-medium text-primary bg-white transition-colors duration-300 hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring uppercase tracking-widest;
   }
 
   .btn-outline {

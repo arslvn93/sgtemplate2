@@ -1,218 +1,173 @@
 
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-beige-50 py-16">
+    <footer className="bg-gray-900 text-white py-16">
       <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 mb-8">
           {/* Logo & Info */}
-          <div className="col-span-1 md:col-span-1 lg:col-span-1">
-            <Link to="/" className="text-primary text-xl font-serif mb-4 block">
-              Words & Tips
+          <div className="col-span-1">
+            <Link to="/" className="flex flex-col">
+              <span className="text-white text-xl font-serif">Megan Knight</span>
+              <span className="text-white text-sm uppercase tracking-wider mb-4">BUSINESS COACH</span>
             </Link>
-            <p className="text-muted-foreground text-sm mt-4 max-w-xs">
-              Helping businesses create authentic, audience-resonating content that converts.
+            <p className="text-gray-400 text-sm mt-4 max-w-xs">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ipsum magna
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-primary font-medium text-sm uppercase tracking-wider mb-5">
-              Quick Links
+          {/* Navigation */}
+          <div className="col-span-1 flex flex-col">
+            <h4 className="text-white font-medium text-sm uppercase tracking-wider mb-5 relative pl-8">
+              <span className="absolute left-0 top-1/2 transform -translate-y-1/2 rotate-90 text-gray-500">navigation</span>
             </h4>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  to="/"
-                  className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/portfolio"
-                  className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/blog"
-                  className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                >
-                  Blog
-                </Link>
-              </li>
-            </ul>
+            <div className="border-l border-gray-700 pl-8">
+              <ul className="space-y-3">
+                <li>
+                  <Link
+                    to="/"
+                    className="text-gray-400 text-sm hover:text-white transition-colors"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about"
+                    className="text-gray-400 text-sm hover:text-white transition-colors"
+                  >
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services"
+                    className="text-gray-400 text-sm hover:text-white transition-colors"
+                  >
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/blog"
+                    className="text-gray-400 text-sm hover:text-white transition-colors"
+                  >
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="#freebie"
+                    className="text-gray-400 text-sm hover:text-white transition-colors"
+                  >
+                    Freebies
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/contact"
+                    className="text-gray-400 text-sm hover:text-white transition-colors"
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="text-primary font-medium text-sm uppercase tracking-wider mb-5">
-              Services
-            </h4>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  to="/services/content-strategy"
-                  className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                >
-                  Content Strategy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services/copywriting"
-                  className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                >
-                  Copywriting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services/brand-storytelling"
-                  className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                >
-                  Brand Storytelling
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services/consulting"
-                  className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                >
-                  Consulting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services/workshops"
-                  className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                >
-                  Workshops
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="text-primary font-medium text-sm uppercase tracking-wider mb-5">
-              Get in Touch
-            </h4>
-            <ul className="space-y-3">
-              <li className="text-muted-foreground text-sm">
-                hello@wordsandtips.com
-              </li>
-              <li className="text-muted-foreground text-sm">
-                +1 (555) 123-4567
-              </li>
-              <li className="flex space-x-4 mt-4">
-                <a
-                  href="#"
-                  className="text-primary hover:text-primary/80 transition-colors"
-                  aria-label="Instagram"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  className="text-primary hover:text-primary/80 transition-colors"
-                  aria-label="Twitter"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  className="text-primary hover:text-primary/80 transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          {/* Newsletter Signup */}
+          <div className="col-span-1">
+            <div>
+              <h4 className="text-lg font-display mb-2">JOIN THE TRIBE!</h4>
+              <p className="text-gray-400 text-sm mb-4">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse dolore!
+              </p>
+              <div className="flex flex-col space-y-3">
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  className="bg-gray-800 border border-gray-700 px-4 py-2 text-sm text-white focus:outline-none"
+                />
+                <button className="bg-white text-black px-4 py-2 text-sm font-medium uppercase tracking-wider hover:bg-gray-200 transition-colors">
+                  Subscribe
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-beige-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted-foreground text-sm">
-            © {currentYear} Words & Tips. All rights reserved.
+        {/* Social Icons */}
+        <div className="flex justify-center space-x-4 my-8">
+          <a
+            href="#"
+            className="text-gray-400 hover:text-white transition-colors"
+            aria-label="Facebook"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a
+            href="#"
+            className="text-gray-400 hover:text-white transition-colors"
+            aria-label="Instagram"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a
+            href="#"
+            className="text-gray-400 hover:text-white transition-colors"
+            aria-label="Pinterest"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M8 12a4 4 0 0 1 8 0c0 2.5-2 4-3.5 4s-2-1-2-1m2-2v6"></path>
+              <circle cx="12" cy="12" r="10"></circle>
+            </svg>
+          </a>
+        </div>
+
+        <div className="border-t border-gray-800 pt-8 text-center">
+          <p className="text-gray-500 text-xs">
+            © DESIGNORINA {currentYear}. ALL RIGHTS RESERVED.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link
-              to="/privacy"
-              className="text-muted-foreground text-sm hover:text-primary transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              to="/terms"
-              className="text-muted-foreground text-sm hover:text-primary transition-colors"
-            >
-              Terms of Service
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

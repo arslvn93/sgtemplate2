@@ -3,7 +3,7 @@ import React from "react";
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-16 bg-accent border-t border-b border-beige-200" id="freebie">
+    <section className="py-12 bg-beige-50 border-t border-b border-beige-200" id="freebie">
       <div className="container-custom">
         <div className="text-center mb-2">
           <span className="uppercase text-xs tracking-wider">#happyclients</span>

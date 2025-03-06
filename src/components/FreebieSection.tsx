@@ -24,11 +24,11 @@ const FreebieSection = () => {
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" id="freebie">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col gap-5">
-            <h2 className="text-3xl md:text-4xl font-display mb-2">
+            <h2 className="text-3xl md:text-3xl font-display mb-2">
               Want to create a genuine connection with your audience?
             </h2>
             <p className="text-muted-foreground">
@@ -60,14 +60,9 @@ const FreebieSection = () => {
           <div className="flex justify-center">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1611926653456-e0109c2710e3?auto=format&fit=crop&q=80&w=630&ixlib=rb-4.0.3"
-                alt="Laptop mockup" 
-                className="max-w-full"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3"
-                alt="Phone mockup"
-                className="absolute -bottom-10 -right-10 w-48 z-10"
+                src="/lovable-uploads/25a6fcd6-7c2a-4c03-87b8-1d1095a8885b.png"
+                alt="Tablet mockup" 
+                className="w-full max-w-sm"
               />
             </div>
           </div>

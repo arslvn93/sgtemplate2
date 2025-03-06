@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import NewsletterSignup from "@/components/NewsletterSignup";
 import HeroSection from "@/components/HeroSection";
 import MyStorySection from "@/components/MyStorySection";
 import CategoriesSection from "@/components/CategoriesSection";
