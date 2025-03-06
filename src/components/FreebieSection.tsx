@@ -1,16 +1,15 @@
-
 import React, { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-
 const FreebieSection = () => {
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     // Simulate API call
     setTimeout(() => {
       setIsLoading(false);
@@ -18,13 +17,11 @@ const FreebieSection = () => {
       toast({
         title: "Success!",
         description: "You've been subscribed to our newsletter.",
-        duration: 5000,
+        duration: 5000
       });
     }, 1000);
   };
-
-  return (
-    <section className="py-16 bg-white" id="freebie">
+  return <section className="py-16 bg-white" id="freebie">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col gap-5">
@@ -39,19 +36,8 @@ const FreebieSection = () => {
             </p>
             <div className="mt-2">
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
-                <input 
-                  type="email" 
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email address" 
-                  className="bg-accent border border-beige-200 px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary/20"
-                  required
-                />
-                <button 
-                  type="submit"
-                  disabled={isLoading}
-                  className="bg-black text-white px-5 py-3 uppercase text-xs tracking-widest hover:bg-black/90 transition-colors"
-                >
+                <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email address" className="bg-accent border border-beige-200 px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary/20" required />
+                <button type="submit" disabled={isLoading} className="bg-black text-white px-5 py-3 uppercase text-xs tracking-widest hover:bg-black/90 transition-colors">
                   {isLoading ? "Subscribing..." : "GET INSTANT ACCESS"}
                 </button>
               </form>
@@ -59,17 +45,11 @@ const FreebieSection = () => {
           </div>
           <div className="flex justify-center">
             <div className="relative">
-              <img 
-                src="/lovable-uploads/25a6fcd6-7c2a-4c03-87b8-1d1095a8885b.png"
-                alt="Tablet mockup" 
-                className="w-full max-w-sm"
-              />
+              <img alt="Tablet mockup" className="w-full max-w-sm" src="/lovable-uploads/fa5e4f92-e560-4b51-9d29-16946ed5705e.jpg" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default FreebieSection;
