@@ -26,27 +26,27 @@ const Index = () => {
       <section className="relative h-screen flex items-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/lovable-uploads/5790a0ff-18f9-4876-8c77-9f5caed90189.png"
+            src="/lovable-uploads/445cdcff-ed58-45d7-919b-4e6b12e17c25.png"
             alt="Marketing specialist helping businesses grow"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-black opacity-30"></div>
+          <div className="absolute inset-0 bg-black opacity-70"></div>
         </div>
         
         <div className="container-custom relative z-10 text-white">
-          <div className="max-w-2xl mx-auto text-center md:text-left md:mx-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display leading-tight">
+          <div className="max-w-2xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display leading-tight mb-6">
               LET'S CREATE MAGIC<br />& GROW YOUR<br />BUSINESS
             </h1>
-            <p className="mt-4 text-white/90 md:text-lg max-w-lg">
+            <p className="mt-4 text-white/90 md:text-lg max-w-lg mx-auto">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sed incididunt ut labore et dolore ipsum duis 17% magna
             </p>
-            <div className="mt-8 flex gap-4">
-              <Link to="#freebie" className="btn-primary bg-white text-primary hover:bg-white/90 uppercase">
-                Get a free training
+            <div className="mt-8 flex gap-4 justify-center">
+              <Link to="#freebie" className="btn-primary bg-white text-primary hover:bg-white/90">
+                GET A FREE TRAINING
               </Link>
-              <Link to="/services" className="btn-outline text-white border-white hover:bg-white/10 uppercase">
-                Discover services
+              <Link to="/services" className="btn-outline text-white border-white hover:bg-white/10">
+                DISCOVER SERVICES
               </Link>
             </div>
           </div>
@@ -70,8 +70,8 @@ const Index = () => {
               <p className="mt-4 text-muted-foreground">
                 Et tortor consequat id porta nibh. Et tortor at risus viverra adipiscing at in tellus integer. Ornare suspendisse sed nisi lacus sed viverra tellus in. Etiam dignissim diam quis enim lobortis fermentum dui faucibus. Adipiscing elit duis sollicitudin nibh sit. Hendrerit gravida rutrum.
               </p>
-              <Link to="/about" className="btn-outline mt-6 uppercase">
-                About Megan
+              <Link to="/about" className="btn-outline mt-6">
+                ABOUT MEGAN
               </Link>
             </div>
             <div>
@@ -92,15 +92,15 @@ const Index = () => {
             <Link to="/category-name" className="text-lg font-display uppercase hover:text-primary/70 transition-colors">
               copywriting
             </Link>
-            <div className="h-8 w-px bg-beige-200 hidden md:block"></div>
+            <div className="category-divider"></div>
             <Link to="/category-name" className="text-lg font-display uppercase hover:text-primary/70 transition-colors">
               strategy
             </Link>
-            <div className="h-8 w-px bg-beige-200 hidden md:block"></div>
+            <div className="category-divider"></div>
             <Link to="/category-name" className="text-lg font-display uppercase hover:text-primary/70 transition-colors">
               marketing
             </Link>
-            <div className="h-8 w-px bg-beige-200 hidden md:block"></div>
+            <div className="category-divider"></div>
             <Link to="/category-name" className="text-lg font-display uppercase hover:text-primary/70 transition-colors">
               social media
             </Link>
@@ -125,8 +125,8 @@ const Index = () => {
               <p className="mt-4 text-muted-foreground">
                 Congue eu consequat ac felis donec et odio. Quis vel eros donec ac odio tempor orci dapibus. Amet mattis vulputate enim nulla aliquet porttitor lacus. Sollicitudin nibh sit amet commodo. Pulvinar neque laoreet suspendisse.
               </p>
-              <Link to="/blog" className="btn-outline mt-6 uppercase self-start">
-                Read More
+              <Link to="/blog" className="btn-outline mt-6 self-start">
+                READ MORE
               </Link>
             </div>
             <div>
@@ -170,7 +170,7 @@ const Index = () => {
                 Quis varius quam quisque id diam vel. Habitant morbi tristique senectus et? Scelerisque fermentum in ornare?
               </p>
               <Link to="/services" className="btn-outline uppercase self-start">
-                Explore Services
+                EXPLORE SERVICES
               </Link>
             </div>
           </div>
@@ -187,9 +187,9 @@ const Index = () => {
             Duis aute irure dolor in reprehenderit in voluptate velit esse dolore eu sed 2 fugiat!
           </p>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center relative">
                 <span className="block text-4xl md:text-5xl font-display text-primary mb-2">
                   {stat.value}
                 </span>
@@ -197,7 +197,7 @@ const Index = () => {
                   {stat.label}
                 </span>
                 {index < stats.length - 1 && (
-                  <div className="h-20 w-px bg-beige-200 mx-auto hidden md:block absolute right-0 top-1/2 -translate-y-1/2"></div>
+                  <div className="h-20 w-px bg-beige-200 absolute right-0 top-1/2 -translate-y-1/2 hidden md:block"></div>
                 )}
               </div>
             ))}
@@ -207,11 +207,11 @@ const Index = () => {
 
       {/* Masterclass Section */}
       <section className="py-24 bg-beige-50 relative">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 opacity-60">
           <img
             src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&q=80&w=1468&ixlib=rb-4.0.3"
             alt="Background image"
-            className="w-full h-full object-cover opacity-60"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="container-custom relative z-10">
@@ -226,7 +226,7 @@ const Index = () => {
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia!
             </p>
             <Link to="#freebie" className="btn-primary uppercase">
-              Watch Instantly!
+              WATCH INSTANTLY!
             </Link>
           </div>
         </div>
@@ -236,11 +236,14 @@ const Index = () => {
       <section className="py-20 bg-white border-t border-b border-beige-200">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-display mb-4 text-center">
-            What feels right for you?
+            WHAT FEELS RIGHT FOR YOU?
           </h2>
-          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-14">
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
+          <div className="text-center mb-14">
+            <span className="uppercase text-sm tracking-wider font-medium">EXPLORE OUR PROGRAMS</span>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="relative group overflow-hidden">
@@ -251,7 +254,7 @@ const Index = () => {
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <Link to="/services#service-1" className="bg-white text-primary px-6 py-3 uppercase font-medium">
-                  Service One
+                  SERVICE ONE
                 </Link>
               </div>
             </div>
@@ -264,7 +267,7 @@ const Index = () => {
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <Link to="/services#service-2" className="bg-white text-primary px-6 py-3 uppercase font-medium">
-                  Service Two
+                  SERVICE TWO
                 </Link>
               </div>
             </div>
@@ -277,7 +280,7 @@ const Index = () => {
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <Link to="#freebie" className="bg-white text-primary px-6 py-3 uppercase font-medium">
-                  Free Training
+                  FREE TRAINING
                 </Link>
               </div>
             </div>
@@ -286,31 +289,80 @@ const Index = () => {
       </section>
 
       {/* Testimonial Section */}
-      <section className="py-20 bg-beige-50" id="freebie">
+      <section className="py-20 bg-beige-50 border-t border-b border-beige-200" id="freebie">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-display mb-4 text-center">
-            What clients say:
+          <div className="text-center mb-2">
+            <span className="uppercase text-sm tracking-wider">#happyclients</span>
+          </div>
+          <h2 className="text-3xl font-display italic mb-8 text-center">
+            "Now I feel excited about social media!"
           </h2>
-          <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-14">
-            "Now I feel excited about social media"
-          </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <TestimonialCard
-              quote="Working with Megan transformed our content strategy completely. Her storytelling approach helped us connect with our audience in ways we never thought possible."
-              author="Jessica Chen"
-              role="CEO, Brightstar Media"
-            />
-            <TestimonialCard
-              quote="Our email open rates increased by 43% after implementing Megan's copywriting techniques. Her ability to craft compelling headlines and engaging content is unmatched."
-              author="Michael Rodriguez"
-              role="Marketing Director, Elevate Group"
-            />
-            <TestimonialCard
-              quote="Megan has a gift for turning complex ideas into clear, compelling narratives. She helped us articulate our value proposition in a way that truly resonates with our ideal clients."
-              author="Priya Patel"
-              role="Founder, Innovate Solutions"
-            />
+          <div className="max-w-3xl mx-auto mb-14">
+            <p className="text-center text-muted-foreground mx-auto">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales!
+            </p>
+            <h3 className="text-center mt-4 font-medium">- Amy Jacobs</h3>
+          </div>
+          
+          <div className="flex justify-center gap-4">
+            <button className="w-12 h-12 rounded-full flex items-center justify-center border border-beige-200 hover:bg-beige-100 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transform rotate-180">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </button>
+            <button className="w-12 h-12 rounded-full flex items-center justify-center border border-beige-200 hover:bg-beige-100 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA/Freebie Section */}
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="flex flex-col gap-6">
+              <h2 className="text-3xl md:text-4xl font-display mb-2">
+                Want to create a genuine connection with your audience?
+              </h2>
+              <p className="text-muted-foreground">
+                Learn how to write better <i>stories</i> and make scroll-stopping visuals with our<i> 60 minute live training!</i>
+              </p>
+              <p className="text-muted-foreground">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eiusmod tempor incididunt ut labore et dolore, magna aliqua. Faucibus ornare suspendisse sed nisi. Platea dictumst vestibulum rhoncus. Elementum curabitur vitae 60 velit sodales!
+              </p>
+              <div className="mt-4">
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <input 
+                    type="email" 
+                    placeholder="Email address" 
+                    className="bg-beige-50 border border-beige-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/30"
+                  />
+                  <button className="bg-primary text-white px-6 py-3 uppercase font-medium hover:bg-primary/90 transition-colors">
+                    GET INSTANT ACCESS
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1611926653456-e0109c2710e3?auto=format&fit=crop&q=80&w=630&ixlib=rb-4.0.3"
+                  alt="Laptop mockup" 
+                  className="max-w-full"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3"
+                  alt="Phone mockup"
+                  className="absolute -bottom-10 -right-10 w-48 z-10"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -331,7 +383,7 @@ const Index = () => {
               Join our weekly newsletter for actionable tips on crafting stories that connect with your audience and drive conversions. Plus, get our free guide to creating compelling headlines.
             </p>
             <button className="bg-white text-primary px-8 py-3 font-medium hover:bg-white/90 transition-colors uppercase">
-              Subscribe Now
+              SUBSCRIBE NOW
             </button>
           </div>
         </div>

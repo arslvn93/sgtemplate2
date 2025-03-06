@@ -1,45 +1,36 @@
 
-import { Link } from "react-router-dom";
-
 interface BlogCardProps {
-  image: string;
-  category: string;
+  key: number;
   title: string;
   excerpt: string;
+  category: string;
   date: string;
-  slug: string;
+  image: string;
+  url?: string; // Make url optional to fix the error
 }
 
-const BlogCard = ({ image, category, title, excerpt, date, slug }: BlogCardProps) => {
+const BlogCard = ({ title, excerpt, category, date, image, url }: BlogCardProps) => {
   return (
-    <article className="group">
-      <Link to={`/blog/${slug}`} className="block overflow-hidden">
-        <div className="relative h-[300px] overflow-hidden">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
-      </Link>
-      <div className="mt-4">
-        <span className="text-xs uppercase tracking-wider text-muted-foreground">
-          {category} • {date}
-        </span>
-        <h3 className="mt-2 text-xl font-display">
-          <Link to={`/blog/${slug}`} className="hover:text-primary/80 transition-colors">
-            {title}
-          </Link>
-        </h3>
-        <p className="mt-2 text-muted-foreground text-sm line-clamp-2">{excerpt}</p>
-        <Link
-          to={`/blog/${slug}`}
-          className="mt-3 inline-block text-sm font-medium text-primary/90 hover:text-primary/70 transition-colors"
-        >
-          Read More →
-        </Link>
+    <div className="bg-white border border-beige-100 overflow-hidden transition-all duration-300 hover:shadow-md">
+      <div className="aspect-[4/3] overflow-hidden">
+        <img 
+          src={image} 
+          alt={title} 
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+        />
       </div>
-    </article>
+      <div className="p-6">
+        <div className="flex items-center justify-between mb-2">
+          <span className="text-xs uppercase tracking-wider text-muted-foreground">{category}</span>
+          <span className="text-xs text-muted-foreground">{date}</span>
+        </div>
+        <h3 className="text-xl font-display mb-2">{title}</h3>
+        <p className="text-muted-foreground text-sm mb-4">{excerpt}</p>
+        <a href={url || "#"} className="text-primary font-medium uppercase text-sm hover:text-primary/70 transition-colors">
+          Read More →
+        </a>
+      </div>
+    </div>
   );
 };
 
