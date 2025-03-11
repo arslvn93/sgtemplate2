@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={hero.backgroundImage}
-          alt="Marketing specialist helping businesses grow"
+          alt="Luxury home with modern architecture"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black opacity-70"></div>

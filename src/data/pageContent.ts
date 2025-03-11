@@ -2,136 +2,136 @@
 export const pageContent = {
   // Hero Section
   hero: {
-    title: "LET'S CREATE MAGIC & GROW YOUR BUSINESS",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sed incididunt ut labore et dolore ipsum duis 17% magna",
-    buttonText1: "GET A FREE TRAINING",
-    buttonLink1: "#freebie",
-    buttonText2: "DISCOVER SERVICES",
-    buttonLink2: "/services",
+    title: "FINDING YOUR DREAM HOME STARTS HERE",
+    description: "With over 15 years of experience in the local real estate market, I help families find their perfect home and sellers get the best value for their property.",
+    buttonText1: "BUYER'S GUIDE",
+    buttonLink1: "/buyers",
+    buttonText2: "SELLER'S GUIDE",
+    buttonLink2: "/sellers",
     backgroundImage: "/lovable-uploads/98a86edf-4332-4ac8-aabe-103c9f40d705.png"
   },
   
   // My Story Section
   myStory: {
-    title: "How I Started My Marketing Journey",
-    label: "THIS IS MY STORY",
+    title: "Your Trusted Real Estate Partner",
+    label: "ABOUT SARAH WILLIAMS",
     paragraphs: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore duis 17% magna",
-      "Et tortor consequat id porta nibh. Et tortor at risus viverra adipiscing at in tellus integer. Ornare suspendisse sed nisi lacus sed viverra tellus in. Etiam dignissim diam quis enim lobortis fermentum dui faucibus. Adipiscing elit duis sollicitudin nibh sit. Hendrerit gravida rutrum."
+      "With over 15 years of experience in the competitive local real estate market, I've developed an intimate understanding of neighborhood dynamics, pricing trends, and negotiation strategies.",
+      "My approach is simple: I listen carefully to understand your unique needs, provide honest advice based on market data, and work tirelessly to ensure a smooth transaction from start to finish. Whether you're buying your first home or selling an investment property, my goal is to make the process as stress-free as possible."
     ],
-    buttonText: "ABOUT MEGAN",
+    buttonText: "MY STORY",
     buttonLink: "/about",
     image: "/lovable-uploads/c1739916-b84a-49b3-8d9d-38ad35d8fd3c.jpg"
   },
   
   // Categories Section
   categories: [
-    { title: "SOCIAL MEDIA", link: "/services" },
-    { title: "COPYWRITING", link: "/services" },
-    { title: "STRATEGY", link: "/services" },
-    { title: "MARKETING", link: "/services" }
+    { title: "BUY", link: "/buyers" },
+    { title: "SELL", link: "/sellers" },
+    { title: "PROPERTIES", link: "/properties" },
+    { title: "NEIGHBORHOODS", link: "/neighborhoods" }
   ],
   
   // Story Section
   story: {
-    title: "If you're struggling with marketing... You probably need a better story.",
-    label: "HERE'S THE SECRET:",
+    title: "A personalized approach to your real estate journey",
+    label: "HOW I WORK:",
     paragraphs: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer scelerisque varius.",
-      "Congue eu consequat ac felis donec et odio. Quis vel eros donec ac odio tempor orci dapibus. Amet mattis vulputate enim nulla aliquet porttitor lacus. Sollicitudin nibh sit amet commodo. Pulvinar neque laoreet suspendisse."
+      "No two real estate transactions are the same. I take the time to understand your specific goals, timeline, and financial considerations before developing a customized strategy for your success.",
+      "From first-time homebuyers navigating mortgage pre-approval to seasoned investors seeking the perfect opportunity, my approach is tailored to meet your unique needs while providing the expertise and guidance you deserve."
     ],
-    buttonText: "READ MORE",
-    buttonLink: "/blog",
+    buttonText: "LEARN MORE",
+    buttonLink: "/about",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3"
   },
   
   // Boring Copy Section
   boringCopy: {
-    title: "Does your copy sound boring?",
+    title: "Making the complex simple",
     paragraphs: [
-      "You feel like you don't have an inspiring story to share. You are always promoting your features & trying to sell products in your copy?",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi et dolore magna aliqua. In tellus integer scelerisque varius?",
-      "Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incidi et ornare sed magna aliqua? In tellus integer scelerisque varius.",
-      "Quis varius quam quisque id diam vel. Habitant morbi tristique senectus et? Scelerisque fermentum in ornare?"
+      "Real estate transactions involve countless details, legal requirements, and potential pitfalls. My job is to navigate these complexities for you, ensuring a smooth process from start to finish.",
+      "I coordinate with all parties involved – from lenders and inspectors to attorneys and contractors – keeping you informed without overwhelming you with unnecessary details.",
+      "With my guidance, you'll understand each step of the process and feel confident in your decisions. I handle the paperwork and negotiations so you can focus on preparing for your next chapter.",
+      "My clients consistently praise my ability to explain complex concepts in clear, straightforward terms, making the entire transaction less stressful and more enjoyable."
     ],
-    buttonText: "EXPLORE SERVICES",
-    buttonLink: "/services",
+    buttonText: "MY APPROACH",
+    buttonLink: "/about",
     image: "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&q=80&w=1632&ixlib=rb-4.0.3"
   },
   
   // Stats Section
   stats: {
-    title: "What we're most proud of:",
-    description: "Duis aute irure dolor in reprehenderit in voluptate velit esse dolore eu sed 2 fugiat!",
+    title: "Professional Excellence",
+    description: "Recognized among the top 5% of realtors in the region with a proven track record of success.",
     items: [
-      { value: "380+", label: "HAPPY CLIENTS" },
-      { value: "12 years", label: "EXPERIENCE" },
-      { value: "95%", label: "SUCCESS RATE" },
-      { value: "5", label: "TEAM MEMBERS" }
+      { value: "200+", label: "HOMES SOLD" },
+      { value: "15 years", label: "EXPERIENCE" },
+      { value: "99%", label: "LISTING-TO-SALE RATIO" },
+      { value: "$75M+", label: "SALES VOLUME" }
     ]
   },
   
   // Masterclass Section
   masterclass: {
-    title: "Nurture Your Followers Masterclass",
-    subtitle: "Ready to position yourself as an expert in your industry?",
-    description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia!",
-    buttonText: "WATCH INSTANTLY!",
+    title: "First-Time Homebuyer's Workshop",
+    subtitle: "Ready to make the transition from renting to owning?",
+    description: "Join my free online workshop where I'll walk you through the entire home buying process, from securing financing and understanding your budget to making competitive offers and navigating inspections. This comprehensive guide has helped over 100 first-time buyers find and purchase their dream homes.",
+    buttonText: "REGISTER NOW",
     buttonLink: "#freebie",
     backgroundImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=7952&ixlib=rb-4.0.3"
   },
   
   // Services Grid Section
   servicesGrid: {
-    title: "WHAT FEELS RIGHT FOR YOU?",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "HOW CAN I HELP YOU?",
+    description: "Whether you're buying, selling, or just exploring the market, I provide specialized services to meet your real estate needs.",
     items: [
       {
-        title: "SERVICE ONE",
-        image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=2000&ixlib=rb-4.0.3",
-        link: "/services#service-1"
+        title: "BUYER SERVICES",
+        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=2000&ixlib=rb-4.0.3",
+        link: "/buyers"
       },
       {
-        title: "SERVICE TWO",
-        image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=2000&ixlib=rb-4.0.3",
-        link: "/services#service-2"
+        title: "SELLER SERVICES",
+        image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&q=80&w=2000&ixlib=rb-4.0.3",
+        link: "/sellers"
       },
       {
-        title: "FREE TRAINING",
-        image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&q=80&w=3011&ixlib=rb-4.0.3",
+        title: "FREE CONSULTATION",
+        image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&q=80&w=3011&ixlib=rb-4.0.3",
         link: "#freebie",
         highlight: true
       }
     ],
-    linkText: "EXPLORE OUR PROGRAMS",
+    linkText: "VIEW ALL SERVICES",
     linkUrl: "/services"
   },
   
   // Testimonials Section
   testimonials: {
-    quote: "Now I feel excited about social media!",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales!",
-    author: "Amy Jacobs"
+    quote: "Sarah turned our home-buying journey into a delightful experience!",
+    description: "As first-time homebuyers, we were nervous about the whole process. Sarah guided us through every step with patience and expertise. She found us the perfect house in our dream neighborhood and negotiated a price below our budget. We couldn't be happier!",
+    author: "The Andersons - New Homeowners"
   },
   
   // Freebie Section
   freebie: {
-    title: "Want to create a genuine connection with your audience?",
+    title: "Get Your Free Home Buyer's Checklist",
     paragraphs: [
-      "Learn how to write better stories and make scroll-stopping visuals with our 60 minute live training!",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eiusmod tempor incididunt ut labore et dolore, magna aliqua. Faucibus ornare suspendisse sed nisi. Platea dictumst vestibulum rhoncus. Elementum curabitur vitae 60 velit sodales!"
+      "Don't miss critical steps in your home-buying journey! My comprehensive 20-point checklist covers everything from mortgage pre-approval to closing day preparations.",
+      "This valuable resource has helped dozens of my clients navigate the purchasing process with confidence. Know exactly what to expect at each phase, understand common pitfalls to avoid, and feel prepared to make one of life's biggest investments with clarity and confidence."
     ],
-    buttonText: "GET INSTANT ACCESS",
-    loadingText: "Subscribing...",
+    buttonText: "DOWNLOAD NOW",
+    loadingText: "Preparing Download...",
     image: "/lovable-uploads/fa5e4f92-e560-4b51-9d29-16946ed5705e.jpg"
   },
   
   // CTA Section
   cta: {
-    tagline: "OUR PROVEN STORYTELLING TECHNIQUES",
-    title: "Want to create a genuine connection with your audience?",
-    description: "Join our weekly newsletter for actionable tips on crafting stories that connect with your audience and drive conversions. Plus, get our free guide to creating compelling headlines.",
-    buttonText: "SUBSCRIBE NOW",
+    tagline: "YOUR REAL ESTATE JOURNEY",
+    title: "Ready to find your dream home or sell your property?",
+    description: "Whether you're looking to buy, sell, or simply have questions about the current market, I'm here to help. Let's connect and discuss how my personalized approach to real estate can benefit you.",
+    buttonText: "SCHEDULE A CALL",
     image: "/lovable-uploads/31a27541-f3a6-49bd-ab98-628b9fb6c03f.jpg"
   }
 };
