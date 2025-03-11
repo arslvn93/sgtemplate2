@@ -13,6 +13,7 @@ import ServicesGridSection from "@/components/ServicesGridSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FreebieSection from "@/components/FreebieSection";
 import CtaSection from "@/components/CtaSection";
+import ContentEditor from "@/components/ContentEditor";
 
 const Index = () => {
   useEffect(() => {
@@ -34,6 +35,7 @@ const Index = () => {
       <FreebieSection />
       <CtaSection />
       <Footer />
+      <ContentEditor />
     </>
   );
 };
