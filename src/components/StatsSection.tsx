@@ -1,13 +1,9 @@
 
 import React from "react";
+import { pageContent } from "@/data/pageContent";
 
 const StatsSection = () => {
-  const stats = [
-    { value: "380+", label: "HAPPY CLIENTS" },
-    { value: "12 years", label: "EXPERIENCE" },
-    { value: "95%", label: "SUCCESS RATE" },
-    { value: "5", label: "TEAM MEMBERS" },
-  ];
+  const { stats } = pageContent;
 
   return (
     <section className="py-16 bg-white border-t border-b border-beige-200">
@@ -16,7 +12,7 @@ const StatsSection = () => {
           What we're most proud of:
         </h2>
         <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12 text-sm">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse dolore eu sed 2 fugiat!
+          Our track record speaks for itself - see why hundreds of clients trust us with their real estate needs.
         </p>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative">

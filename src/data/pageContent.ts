@@ -45,41 +45,13 @@ export const pageContent = {
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3"
   },
   
-  // Boring Copy Section
-  boringCopy: {
-    title: "Making the complex simple",
-    paragraphs: [
-      "Real estate transactions involve countless details, legal requirements, and potential pitfalls. My job is to navigate these complexities for you, ensuring a smooth process from start to finish.",
-      "I coordinate with all parties involved – from lenders and inspectors to attorneys and contractors – keeping you informed without overwhelming you with unnecessary details.",
-      "With my guidance, you'll understand each step of the process and feel confident in your decisions. I handle the paperwork and negotiations so you can focus on preparing for your next chapter.",
-      "My clients consistently praise my ability to explain complex concepts in clear, straightforward terms, making the entire transaction less stressful and more enjoyable."
-    ],
-    buttonText: "MY APPROACH",
-    buttonLink: "/about",
-    image: "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&q=80&w=1632&ixlib=rb-4.0.3"
-  },
-  
   // Stats Section
-  stats: {
-    title: "Professional Excellence",
-    description: "Recognized among the top 5% of realtors in the region with a proven track record of success.",
-    items: [
-      { value: "200+", label: "HOMES SOLD" },
-      { value: "15 years", label: "EXPERIENCE" },
-      { value: "99%", label: "LISTING-TO-SALE RATIO" },
-      { value: "$75M+", label: "SALES VOLUME" }
-    ]
-  },
-  
-  // Masterclass Section
-  masterclass: {
-    title: "First-Time Homebuyer's Workshop",
-    subtitle: "Ready to make the transition from renting to owning?",
-    description: "Join my free online workshop where I'll walk you through the entire home buying process, from securing financing and understanding your budget to making competitive offers and navigating inspections. This comprehensive guide has helped over 100 first-time buyers find and purchase their dream homes.",
-    buttonText: "REGISTER NOW",
-    buttonLink: "#freebie",
-    backgroundImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=7952&ixlib=rb-4.0.3"
-  },
+  stats: [
+    { value: "380+", label: "HAPPY CLIENTS" },
+    { value: "12 years", label: "EXPERIENCE" },
+    { value: "95%", label: "SUCCESS RATE" },
+    { value: "5", label: "TEAM MEMBERS" }
+  ],
   
   // Services Grid Section
   servicesGrid: {
@@ -88,23 +60,24 @@ export const pageContent = {
     items: [
       {
         title: "BUYER SERVICES",
+        description: "Expert guidance through the entire home buying process, from search to closing.",
         image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=2000&ixlib=rb-4.0.3",
         link: "/buyers"
       },
       {
         title: "SELLER SERVICES",
+        description: "Strategic marketing and pricing to get the best value for your property.",
         image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&q=80&w=2000&ixlib=rb-4.0.3",
         link: "/sellers"
       },
       {
         title: "FREE CONSULTATION",
+        description: "Let's discuss your real estate goals and create a plan for success.",
         image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&q=80&w=3011&ixlib=rb-4.0.3",
         link: "#freebie",
         highlight: true
       }
-    ],
-    linkText: "VIEW ALL SERVICES",
-    linkUrl: "/services"
+    ]
   },
   
   // Testimonials Section

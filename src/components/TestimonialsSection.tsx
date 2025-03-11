@@ -1,7 +1,10 @@
 
 import React from "react";
+import { pageContent } from "@/data/pageContent";
 
 const TestimonialsSection = () => {
+  const { testimonials } = pageContent;
+  
   return (
     <section className="py-12 bg-beige-50 border-t border-b border-beige-200" id="freebie">
       <div className="container-custom">
@@ -9,14 +12,16 @@ const TestimonialsSection = () => {
           <span className="uppercase text-xs tracking-wider">#happyclients</span>
         </div>
         <h2 className="text-2xl font-display italic mb-8 text-center">
-          "Now I feel excited about social media!"
+          {testimonials.quote}
         </h2>
         
         <div className="max-w-2xl mx-auto mb-12">
           <p className="text-center text-muted-foreground mx-auto text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales!
+            {testimonials.description}
           </p>
-          <h3 className="text-center mt-4 font-medium text-sm">- Amy Jacobs</h3>
+          <h3 className="text-center mt-4 font-medium text-sm">
+            - {testimonials.author}
+          </h3>
         </div>
         
         <div className="flex justify-center gap-4">
